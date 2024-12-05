@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2.5 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  .input {
+    @apply block w-full rounded-lg shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm transition-colors py-3;
+    border: 1px solid #e4e4e4;
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+  }
+
+  select.input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    @apply fixed inset-0 bg-gray-500/75 backdrop-blur-sm flex items-center justify-center overflow-y-auto;
+  }
+
+  .modal-container {
+    @apply relative bg-white rounded-xl shadow-xl w-full max-w-2xl mx-auto my-8 overflow-hidden;
+  }
+
+  .modal-header {
+    @apply flex justify-between items-center p-6 border-b;
+  }
+
+  .modal-body {
+    @apply p-6 space-y-6 max-h-[calc(100vh-16rem)] overflow-y-auto;
+  }
+
+  .modal-footer {
+    @apply flex justify-end space-x-3 p-6 border-t bg-gray-50 rounded-b-xl;
+  }
+}

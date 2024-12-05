@@ -1,0 +1,22 @@
+:root {
+  --button-bg: #000000;
+  --button-text: #FFFFFF;
+  --page-bg: #FFFFFF;
+  --page-text: #000000;
+}
+
+.theme-button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+.theme-button-outline {
+  background-color: transparent;
+  color: var(--button-bg);
+  border: 2px solid var(--button-bg);
+}
+
+.theme-page {
+  background-color: var(--page-bg);
+  color: var(--page-text);
+}
